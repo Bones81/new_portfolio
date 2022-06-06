@@ -2,7 +2,7 @@ const Nav = () => {
   return (
     <nav>
       <ul className="nav-ul">
-        <li className="nav-li"><a href="#top">Top</a></li>
+        <li className="nav-li home-link"><a href="#hero">&lt;Nate Codes&gt;</a></li>
         <li className="nav-li"><a href="#about">About</a></li>
         <li className="nav-li"><a href="#projects">Projects</a></li>
         <li className="nav-li"><a href="#resume">Resume</a></li>

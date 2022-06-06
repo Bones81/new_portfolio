@@ -1,3 +1,4 @@
+import './App.css'
 import About from './components/about'
 import Contact from './components/contact'
 import Footer from './components/footer'
@@ -9,8 +10,7 @@ import Resume from './components/resume'
 const App = () => {
 
   return (
-    <>
-      <h1>App component - Nate Codes</h1>
+    <body>
       <Nav />
       <Hero />
       <About />
@@ -18,7 +18,7 @@ const App = () => {
       <Resume />
       <Contact />
       <Footer />
-    </>
+    </body>
   )
 }
 
