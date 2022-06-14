@@ -10,7 +10,7 @@ import Resume from './components/resume'
 const App = () => {
 
   return (
-    <body>
+    <main>
       <Nav />
       <Hero />
       <About />
@@ -18,7 +18,7 @@ const App = () => {
       <Resume />
       <Contact />
       <Footer />
-    </body>
+    </main>
   )
 }
 

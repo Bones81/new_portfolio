@@ -3,7 +3,7 @@ import Header from "./header"
 const Hero = () => {
   return (
     <section id="hero">
-      <h2>Hero section</h2>
+      <img className="hero-img" src="/img/developer-reviewing-javascript.jpeg"/>
       <Header/>
     </section>
   )
