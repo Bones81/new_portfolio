@@ -3,9 +3,9 @@ const Header = () => {
     <div className="header-container">
       <div className="header-spacer"></div>
       <header>
-        <h1>&lt;Nate Codes&gt;</h1>
-        <h2>Nathan Freeman</h2>
+        <h1>Nathan Freeman</h1>
         <h3>Full Stack Developer</h3>
+        <h4>Let's build the world you want to see, together.</h4>
       </header>
     </div>
   )
