@@ -117,7 +117,7 @@ header {
 
 #about {
   width: 100vw;
-  padding: 0;
+  padding: 1em 0;
   display: flex;
   flex-flow: row wrap;
   gap: 1em;
