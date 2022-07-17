@@ -142,6 +142,9 @@ header {
 
 #bio-text {
   width: 90%;
+  background: rgba(255,255,255,0.8);
+  padding: 1em;
+  border-radius: 20px;
 }
 
 #bio-text p {
