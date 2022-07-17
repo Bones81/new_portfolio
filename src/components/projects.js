@@ -17,13 +17,17 @@ const Projects = () => {
     setShowProject(true)
   }
 
+  const resetDisplay = () => {
+    setShowID(null)
+    setShowProject(false)
+  }
+
   useEffect(() => {
     getProjects()
   }, [])
 
   return (
     <section id="projects">
-      Projects go here:
       {projects.map(proj => {
         return !showProject ? (
           <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
@@ -39,6 +43,7 @@ const Projects = () => {
             <p>{proj.blurb}</p>
             <button><a target="_blank" href={proj.liveLink}>Live Link</a></button>
             <button><a target="_blank" href={proj.githubLink}>The Code</a></button>
+            <button onClick={resetDisplay}>Back to All Projects</button>
           </div>
         ) : null
       })}
