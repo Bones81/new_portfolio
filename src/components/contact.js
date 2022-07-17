@@ -3,8 +3,9 @@ import Links from './links'
 const Contact = () => {
   return (
     <section id="contact">
-      Contact info here<br/>
-      Links: <Links />
+      <h2>Contact Me</h2>
+      <button><a href="mailto:nathanlfreeman@gmail.com">EMAIL</a></button><br/>
+      <Links />
     </section>
   )
 }
