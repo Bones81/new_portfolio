@@ -11,25 +11,14 @@ import Resume from './components/resume'
 import React from 'react'
 
 const App = () => {
-  const [projects, setProjects] = useState([])
 
-  const getProjects = () => {
-    axios.get('http://localhost:8000/api/projects')
-    .then( (response) => {
-      console.log(response.data)
-    })
-  }
-
-  useEffect(() => {
-    getProjects()
-  }, [])
 
   return (
     <main>
       <Nav />
       <Hero />
       <About />
-      <Projects projects={projects}/>
+      <Projects/>
       <Resume />
       <Contact />
       <Footer />
