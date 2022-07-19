@@ -28,6 +28,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
+      <h2>Projects</h2>
       {projects.map(proj => {
         return !showProject ? (
           <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>

@@ -12,8 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Resume = () => {
   return (
     <section id="resume">
+      <h2>Resume Highlights</h2>
       <div>
-        <h3>Resume Highlights</h3>
         <h4>Technical Skills</h4>
         <div className="tech-skills">
           <FontAwesomeIcon icon={faHtml5} />
