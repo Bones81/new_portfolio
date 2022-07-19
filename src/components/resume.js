@@ -24,6 +24,7 @@ const Resume = () => {
           <FontAwesomeIcon icon={faAngular} />
           <FontAwesomeIcon icon={faPython} />
           <FontAwesomeIcon icon={faGit} />
+          <p>Still need icons for Express, jQuery, Django, MongoDB, Mongoose, PostgreSQL, Heroku, Slack, NestJS, Google Maps, and anything else I can think of</p>
         </div>
 
         <details>

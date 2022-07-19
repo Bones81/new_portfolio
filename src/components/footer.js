@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      2022, Nathan Freeman
+      &copy; 2022, Nathan Freeman, full stack developer
       <h3>&lt;/Nate Codes&gt;</h3>
     </footer>
   )

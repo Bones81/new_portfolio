@@ -1,10 +1,11 @@
 import Links from './links'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
   return (
     <section id="contact">
       <h2>Contact Me</h2>
-      <button><a href="mailto:nathanlfreeman@gmail.com">EMAIL</a></button><br/>
       <Links />
     </section>
   )
