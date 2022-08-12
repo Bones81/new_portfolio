@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios'
+// import {useState, useEffect} from 'react'
+// import axios from 'axios'
 import './App.css'
 import About from './components/about'
 import Contact from './components/contact'

@@ -1,6 +1,5 @@
 import Links from './links'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 
 const Contact = () => {
   return (

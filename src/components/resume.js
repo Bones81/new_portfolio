@@ -29,9 +29,17 @@ const Resume = () => {
 
         <details>
           <summary>Technical Experience</summary>
-          <h3>General Assembly</h3>
-          <h5>April 2022 - July 2022</h5>
-          <h4>Instructional Associate, Belcher cohort</h4>
+          <div className="resume-item">
+            <h3>General Assembly</h3>
+            <h5>April 2022 - July 2022</h5>
+            <h4>Instructional Associate, Belcher cohort</h4>
+          </div>
+          <div className="resume-item">
+            <h3>General Assembly</h3>
+            <h5>January 2022 - April 2022</h5>
+            <h4>Software Engineering Fellow</h4>
+          </div>
+          
         </details>
       </div>
     </section>

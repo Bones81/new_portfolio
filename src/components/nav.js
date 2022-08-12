@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <nav>
+    <nav id="nav">
       <ul className="lg nav-ul">
         <a href="#hero" className="nav-li home-link"><li >&lt;Nate Codes&gt;</li></a>
         <li className="nav-li common-link"><a href="#about">About</a></li>
