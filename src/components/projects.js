@@ -42,6 +42,7 @@ const Projects = () => {
             <p>{proj.blurb}</p>
             <button><a target="_blank" rel="noreferrer" href={proj.liveLink}>Live Link</a></button>
             <button><a target="_blank" rel="noreferrer" href={proj.githubLink}>The Code</a></button>
+            <hr/>
             <button onClick={resetDisplay}>Back to All Projects</button>
           </div>
         ) : null

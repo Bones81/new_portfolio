@@ -177,7 +177,7 @@ header {
 
 
 /* PROJECTS SECTION */
-#projects h2, #resume h2, #contact h2, #resume > div > h4 {
+#projects h2 {
   text-align: center;
 }
 
@@ -208,8 +208,16 @@ header {
 }
 
 /* RESUME SECTION */
+#resume h2, #resume h3 {
+  text-align: center;
+}
+
 #resume h2 {
   font-size: 2.5em;
+}
+
+#resume h3 {
+  font-size: 2em;
 }
 
 .tech-skills {
@@ -243,6 +251,10 @@ details {
 }
 
 /* CONTACT/LINKS SECTION */
+#contact h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
 #links-ul {
   list-style-type: none;
   padding: 0;
@@ -257,6 +269,10 @@ details {
 .link-li a {
   color: black;
   text-decoration: none;
+}
+
+#links svg {
+  font-size: 2em;
 }
 
 button {

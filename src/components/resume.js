@@ -20,7 +20,7 @@ const Resume = () => {
     <section id="resume">
       <h2>Resume Highlights</h2>
       <div>
-        <h4>Technical Skills</h4>
+        <h3>Technical Skills</h3>
         <div className="tech-skills">
           <FaHtml5 />
           <SiCss3/>

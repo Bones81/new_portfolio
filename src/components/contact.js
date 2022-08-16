@@ -4,7 +4,7 @@ import Links from './links'
 const Contact = () => {
   return (
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>Social</h2>
       <Links />
     </section>
   )
