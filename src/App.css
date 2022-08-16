@@ -189,6 +189,7 @@ header {
   width: 80%;
   margin: 2em auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .project-card img, .project-display img {
@@ -203,9 +204,14 @@ header {
   border-radius: 25px;
   width: 80%;
   margin: 2em auto;
+  text-align: center;
 }
 
 /* RESUME SECTION */
+#resume h2 {
+  font-size: 2.5em;
+}
+
 .tech-skills {
   display: flex;
   flex-flow: row wrap;
@@ -218,12 +224,16 @@ header {
   font-size: 5em;
 }
 
+.tech-skills img {
+  max-width: 20%;
+}
+
 details {
   cursor: pointer;
   text-align: center;
   font-size: 2em;
   font-weight: 700;
-  margin: 0 auto;
+  margin: 1em auto;
   width: 70vw;
 }
 

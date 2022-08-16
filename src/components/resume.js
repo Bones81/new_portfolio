@@ -1,13 +1,19 @@
-import { faAngular } from "@fortawesome/free-brands-svg-icons"
-import { faReact } from "@fortawesome/free-brands-svg-icons"
-import { faCss3 } from "@fortawesome/free-brands-svg-icons"
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons"
-import { faJs } from "@fortawesome/free-brands-svg-icons"
-import { faNodeJs } from "@fortawesome/free-brands-svg-icons"
-import { faPython } from "@fortawesome/free-brands-svg-icons"
-import { faGit } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import { FaAngular } from "react-icons/fa"
+import { FaReact } from "react-icons/fa"
+import { FaHtml5 } from "react-icons/fa"
+import { FaJs } from "react-icons/fa"
+import { FaPython } from "react-icons/fa"
+import { FaGit } from "react-icons/fa"
+import { SiExpress, SiGooglemaps } from "react-icons/si"
+import { SiCss3 } from "react-icons/si"
+import { FaNode } from "react-icons/fa"
+import { SiJquery } from "react-icons/si"
+import { DiDjango } from "react-icons/di"
+import { SiMongodb } from "react-icons/si"
+import { SiPostgresql } from "react-icons/si"
+import { SiHeroku } from "react-icons/si"
+import { FaSlack } from "react-icons/fa"
+import { SiNestjs } from "react-icons/si"
 
 const Resume = () => {
   return (
@@ -16,15 +22,24 @@ const Resume = () => {
       <div>
         <h4>Technical Skills</h4>
         <div className="tech-skills">
-          <FontAwesomeIcon icon={faHtml5} />
-          <FontAwesomeIcon icon={faCss3} />
-          <FontAwesomeIcon icon={faJs} />
-          <FontAwesomeIcon icon={faNodeJs} />
-          <FontAwesomeIcon icon={faReact} />
-          <FontAwesomeIcon icon={faAngular} />
-          <FontAwesomeIcon icon={faPython} />
-          <FontAwesomeIcon icon={faGit} />
-          <p>Still need icons for Express, jQuery, Django, MongoDB, Mongoose, PostgreSQL, Heroku, Slack, NestJS, Google Maps, and anything else I can think of</p>
+          <FaHtml5 />
+          <SiCss3/>
+          <FaJs />
+          <SiJquery />
+          <FaNode />
+          <SiExpress />
+          <FaGit />
+          <FaReact />
+          <FaAngular />
+          <FaPython />
+          <DiDjango />
+          <SiPostgresql />
+          <SiMongodb />
+          <SiHeroku />
+          <FaSlack />
+          <SiNestjs />
+          <SiGooglemaps />
+          <img src='./img/mongoose.png' />
         </div>
 
         <details>
