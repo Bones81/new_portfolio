@@ -101,6 +101,10 @@ nav {
   z-index: 1;
 }
 
+.hamburger-menu {
+  cursor: pointer;
+}
+
 .open-menu {
   background: linear-gradient(50deg, navy, silver, blue);
   height: 10vh;
@@ -135,7 +139,7 @@ header {
   position: sticky;
   top: 0;
   bottom: 50vh;
-  width: 80%;
+  width: 100%;
   height: 50vh;
   display: grid;
   place-items: center;
@@ -148,7 +152,7 @@ header {
   border: 1px dashed whitesmoke;
   border-radius: 25px;
   background: rgba(0,0,128, 0.5);
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .header-container {
@@ -162,8 +166,7 @@ header {
 }
 
 .header-spacer {
-  height: 100%;
-  width: 20%;
+  width: 0%;
 }
 
 /* ABOUT SECTION */
@@ -358,6 +361,15 @@ footer a, footer a:visited {
 
   .nav-ul {
     display: flex;
+  }
+
+  header {
+    width: 80%;
+  }
+
+  .header-spacer {
+    height: 100%;
+    width: 20%;
   }
   
   .home-link {

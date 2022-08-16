@@ -20,7 +20,9 @@ const Nav = () => {
       </ul>
       <ul className="sm mini-nav-ul">
         <a href="#hero" className="nav-li home-link"><li >&lt;Nate Codes&gt;</li></a>
-        <GiHamburgerMenu onClick={toggleMenu}/>
+        <div className="hamburger-menu">
+          <GiHamburgerMenu onClick={toggleMenu}/>
+        </div>
       </ul>
       {openMenu ? <div className="open-menu">This would be the open hamburger menu.</div> : null}
     </nav>
