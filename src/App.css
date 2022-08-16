@@ -12,10 +12,12 @@
 
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 main {
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
 }
 
 .lg {
@@ -29,6 +31,7 @@ main {
 
 /* NAV SECTION */
 .mini-nav-ul {
+  margin: 0;
   padding: 1em;
   display: flex;
   flex-flow: row nowrap;
@@ -91,10 +94,18 @@ main {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   z-index: 1;
+}
+
+.open-menu {
+  background: linear-gradient(50deg, navy, silver, blue);
+  height: 10vh;
+  font-size: 2em;
+  color: white;
 }
 
 /* HEADER/HERO SECTION */
@@ -102,6 +113,8 @@ nav {
   background-image: url("../public/img/developer-reviewing-javascript.jpeg");
   background-position: center;
   background-size: cover;
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero-img {
@@ -110,6 +123,7 @@ nav {
   bottom: 100vh;
   height: 50vh;
   width: 100vw;
+  max-width: 100%;
   object-fit: cover;
   object-position: center;
   z-index: -1;
@@ -134,12 +148,14 @@ header {
   border: 1px dashed whitesmoke;
   border-radius: 25px;
   background: rgba(0,0,128, 0.5);
+  max-width: 70%;
 }
 
 .header-container {
   position: sticky;
   top: 0;
   width: 100vw;
+  max-width: 100%;
   height: 50vh;
   display: flex;
   flex-flow: row wrap;
@@ -153,6 +169,7 @@ header {
 /* ABOUT SECTION */
 #about {
   width: 100vw;
+  max-width: 100%;
   padding: 1em 0;
   display: flex;
   flex-flow: row wrap;

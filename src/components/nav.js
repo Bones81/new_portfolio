@@ -1,6 +1,13 @@
+import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 
 const Nav = () => {
+  const [openMenu, setOpenMenu] = useState(false)
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu)
+  }
+
   return (
     <nav id="nav">
       <ul className="lg nav-ul">
@@ -13,8 +20,9 @@ const Nav = () => {
       </ul>
       <ul className="sm mini-nav-ul">
         <a href="#hero" className="nav-li home-link"><li >&lt;Nate Codes&gt;</li></a>
-        <GiHamburgerMenu />
+        <GiHamburgerMenu onClick={toggleMenu}/>
       </ul>
+      {openMenu ? <div className="open-menu">This would be the open hamburger menu.</div> : null}
     </nav>
   )
 }
