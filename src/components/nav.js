@@ -1,3 +1,5 @@
+import { GiHamburgerMenu } from "react-icons/gi"
+
 const Nav = () => {
   return (
     <nav id="nav">
@@ -9,8 +11,9 @@ const Nav = () => {
         <li className="nav-li common-link"><a href="#links">Links</a></li>
         <li className="nav-li common-link"><a href="#contact">Contact</a></li>
       </ul>
-      <ul className="sm nav-ul">
-        
+      <ul className="sm mini-nav-ul">
+        <a href="#hero" className="nav-li home-link"><li >&lt;Nate Codes&gt;</li></a>
+        <GiHamburgerMenu />
       </ul>
     </nav>
   )

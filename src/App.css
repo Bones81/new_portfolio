@@ -24,9 +24,24 @@ main {
 
 .sm {
   display: block;
+
 }
 
 /* NAV SECTION */
+.mini-nav-ul {
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(50deg, navy, silver, blue);
+}
+
+.mini-nav-ul svg {
+  font-size: 2em;
+  color: white;
+}
+
 .nav-ul {
   padding: 1em;
   display: flex;
