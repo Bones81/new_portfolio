@@ -10,6 +10,8 @@
   width: extend-to-zoom;
 }
 
+/* Default view is vertical mobile device */
+
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -144,6 +146,11 @@ nav {
   cursor: pointer;
 }
 
+.open-menu .hamburger-menu {
+  top: 20px;
+  right: 20px;
+}
+
 /* HEADER/HERO SECTION */
 #hero {
   background-image: url("../public/img/developer-reviewing-javascript.jpeg");
@@ -153,7 +160,7 @@ nav {
   max-width: 100%;
 }
 
-.hero-img {
+/* .hero-img {
   position: fixed;
   top: 0px;
   bottom: 100vh;
@@ -164,7 +171,7 @@ nav {
   object-position: center;
   z-index: -1;
   opacity: 50%;
-}
+} */
 
 header {
   box-sizing: border-box;
@@ -184,10 +191,20 @@ header {
   font-variant: small-caps;
   margin: 10vh auto 0;
   padding: 1.5em;
-  border: 1px dashed whitesmoke;
+  border: 1px dotted whitesmoke;
   border-radius: 25px;
+  box-shadow: 2px 2px 10px navy;
   background: rgba(0,0,128, 0.8);
   max-width: 90%;
+}
+
+.header-content h1, .header-content h3, .header-content h4 {
+  margin: 0 auto;
+  padding: 0.125em;
+}
+
+.header-content h1 {
+  text-shadow: 1px 1px 2px black;
 }
 
 .header-container {
@@ -376,7 +393,7 @@ details {
 
 .link-li {
   display: inline;
-  padding: 0 1em;
+  padding: 0 0.5em;
   font-size: 2em;
 }
 
@@ -442,7 +459,47 @@ footer a, footer a:visited {
 }
 
 /* MEDIA QUERIES */
+/* Horizontal mobile device view */
+@media (min-width: 480px) and (max-height: 480px) {
+  header {
+    height: 100vh;
+  }
+  
+  .header-content {
+    margin: 0 auto;
+  } 
 
+  .header-content h1, .header-content h3, .header-content h4 {
+    padding: 0.5em;
+  }
+
+  .header-content h1 {
+    font-size: 2em;
+  }
+
+  .home-link {
+    padding: 0.25em;
+  }
+
+  .hamburger-menu, .open-menu .hamburger-menu {
+    top: 10px;
+  }
+
+  .open-menu .hamburger-menu {
+    top: 5px;
+    right: 20px;
+  }
+
+  .about-pic {
+    max-width: 40%;
+  }
+
+  #bio-text {
+    width: 40%;
+  }
+}
+
+/* Small tablet view */
 @media (min-width: 480px) and (min-height: 480px) {
   .lg {
     display: block;
@@ -458,12 +515,12 @@ footer a, footer a:visited {
   }
  
   .nav-li {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0.5em;
   }
 
   .home-link {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 1em;
   }
 
@@ -474,6 +531,10 @@ footer a, footer a:visited {
   .header-spacer {
     height: 100%;
     width: 20%;
+  }
+
+  .header-content {
+    padding: 1.5em;
   }
 
   h1 {
@@ -491,20 +552,60 @@ footer a, footer a:visited {
   svg, .tech-skills svg {
     font-size: 2.5em;
   }
+
+  .link-li {
+    padding: 0 1em;
+  }
 }
 
+/* Surface Duo vertical view */
+@media (min-width: 480px) and (max-width: 600px) and (min-height: 480px) and (max-height: 750px) {
+  .nav-ul {
+    padding: 0.25em;
+  }
+  
+  .home-link {
+    padding: 0.25em;
+  }
+
+  .home-link, .nav-li {
+    font-size: 1em;
+  }
+
+  .header-content {
+    padding: 1em;
+    margin: 0 auto;
+  }
+}
+
+/* Surface Duo horizontal view*/
+@media (min-width: 600px) and (max-width: 720px) and (min-height: 480px) and (max-height: 720px) {
+  header {
+    height: 100vh;
+  }
+}
+
+/* Nest Hub horizontal view */
+@media (min-width: 840px) and (min-height: 600px) and (max-height: 840px) {
+  header {
+    height: 100vh;
+  }
+}
+
+
+/* Large tablet and full view */
 @media (min-width: 840px) and (min-height: 840px) {
   .nav-ul {
     gap: 1em;
   }
  
   .nav-li {
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 1em;
   }
   
   .home-link {
-    font-size: 1.75em;
+    font-size: 1.5em;
     padding: 1em;
   }
 
@@ -529,5 +630,9 @@ footer a, footer a:visited {
   }
   svg, .tech-skills svg {
     font-size: 3em;
+  }
+
+  .link-li {
+    padding: 0 0.5em;
   }
 }
