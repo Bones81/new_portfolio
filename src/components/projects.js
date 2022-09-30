@@ -45,7 +45,12 @@ const Projects = () => {
             <hr/>
             <button onClick={resetDisplay}>Back to All Projects</button>
           </div>
-        ) : null
+        ) : (
+          <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
+            <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
+            <h2 className='project-title'>{proj.name}</h2>
+          </div>
+        )
       })}
     </section>
   )
