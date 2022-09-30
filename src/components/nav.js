@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
+import { RiArrowGoBackFill } from "react-icons/ri"
+import { MdArrowCircleUp } from "react-icons/md"
 
 const Nav = () => {
   const [openMenu, setOpenMenu] = useState(false)
@@ -17,7 +19,7 @@ const Nav = () => {
         <li className="nav-li common-link"><a href="#resume">Resume</a></li>
         <li className="nav-li common-link"><a href="#connect">Connect</a></li>
       </ul>
-      <ul className="sm mini-nav-ul">
+      <ul className="sm mini-nav-ul-closed">
         <a href="#hero" className="nav-li home-link"><li >&lt;Nate Codes&gt;</li></a>
         <div className="hamburger-menu">
           <GiHamburgerMenu onClick={toggleMenu}/>
@@ -26,9 +28,9 @@ const Nav = () => {
       {openMenu ? 
         <div className="open-menu">
           <div className="hamburger-menu">
-            <GiHamburgerMenu onClick={toggleMenu}/>
+            <MdArrowCircleUp onClick={toggleMenu}/>
           </div>
-          <ul className="mini-nav-ul">
+          <ul className="mini-nav-ul-open">
             <a href="#hero" className="nav-li home-link" onClick={toggleMenu}><li >&lt;Nate Codes&gt;</li></a>
             <li className="nav-li common-link"><a href="#about" onClick={toggleMenu}>About</a></li>
             <li className="nav-li common-link"><a href="#projects" onClick={toggleMenu}>Projects</a></li>

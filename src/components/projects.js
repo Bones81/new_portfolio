@@ -33,7 +33,7 @@ const Projects = () => {
         return !showProject ? (
           <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
             <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
-            <h2>{proj.name}</h2>
+            <h2 className='project-title'>{proj.name}</h2>
           </div>
         ) : showID === proj.id ? (
           <div className="project-display" key={"display_" + proj.id}>

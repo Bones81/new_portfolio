@@ -1,6 +1,7 @@
 const About = () => {
   return (
     <section id="about">
+      <h2>About Nathan</h2>
       <img src="img/Nate_Down_Under.jpg" alt="Nathan headshot" className="about-pic" />
       <article id="bio-text">
         <p>I come to code from a performing arts background. After graduating from Princeton University, I pursued an acting career, with a focus on musical theatre. After many years and a variety of intertwined circumstances, the time had come to build a second career.</p>
