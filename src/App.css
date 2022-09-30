@@ -31,12 +31,16 @@ main {
 
 /* NAV SECTION */
 .mini-nav-ul {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 1em;
+  font-size: 0.75em;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
+  gap: 1em;
   background: linear-gradient(50deg, navy, silver, blue);
 }
 
@@ -102,14 +106,24 @@ nav {
 }
 
 .hamburger-menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
 }
 
 .open-menu {
   background: linear-gradient(50deg, navy, silver, blue);
-  height: 10vh;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
   font-size: 2em;
   color: white;
+  z-index: 99;
+  opacity: 95%;
+  display: grid;
+  place-items: center;
 }
 
 /* HEADER/HERO SECTION */
@@ -290,7 +304,15 @@ details {
 
 }
 
-/* CONTACT/LINKS SECTION */
+/* CONNECT SECTION */
+
+.connect-box {
+  border: 2px solid black;
+  margin: 1em auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px navy;
+}
+
 #contact h2 {
   font-size: 2.5em;
   text-align: center;
@@ -304,6 +326,11 @@ details {
   display: inline;
   padding: 0 1em;
   font-size: 2em;
+  transition: all 0.3s ease;
+}
+
+.link-li:hover {
+  transform: scale(1.2);
 }
 
 .link-li a {
@@ -354,7 +381,7 @@ footer a, footer a:visited {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 480px) {
+@media (min-width: 480px) and (min-height: 480px) {
   .lg {
     display: block;
   }
@@ -369,7 +396,7 @@ footer a, footer a:visited {
   }
  
   .nav-li {
-    font-size: 0.75em;
+    font-size: 1.5em;
     padding: 0.5em;
   }
   
@@ -388,7 +415,7 @@ footer a, footer a:visited {
 
 }
 
-@media (min-width: 840px) {
+@media (min-width: 840px) and (min-height: 840px) {
   .nav-ul {
     gap: 1em;
   }

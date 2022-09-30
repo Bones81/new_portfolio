@@ -6,28 +6,28 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 
-const Links = () => {
+const Connect = () => {
   return (
-    <section id="links">
+    <section id="connect">
       <ul id="links-ul">
         <li className="link-li">
-        <a href="mailto:nathanlfreeman@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+        <a href="mailto:nathanlfreeman@gmail.com" target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} /></a>
         </li>
         <li className="link-li">
-          <a href="https://www.linkedin.com/in/nathanfreeman6"><FontAwesomeIcon icon={faLinkedin}/></a>
+          <a href="https://www.linkedin.com/in/nathanfreeman6" target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faLinkedin}/></a>
         </li>
         <li className="link-li">
-          <a href="https://github.com/Bones81">
+          <a href="https://github.com/Bones81" target="_blank" rel='noreferrer'>
           <FontAwesomeIcon icon={faGithub}/>
           </a>
         </li>
         <li className="link-li">
-          <a href="https://www.instagram.com/nate.is.free/"><FontAwesomeIcon icon={faInstagram}/></a>
+          <a href="https://www.instagram.com/nate.is.free/" target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faInstagram}/></a>
         </li>
       </ul>
     </section>
   )
 }
 
-export default Links
+export default Connect
 

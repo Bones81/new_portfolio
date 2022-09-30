@@ -1,11 +1,12 @@
-import Links from './links'
-
+import Connect from './connect'
 
 const Contact = () => {
   return (
     <section id="contact">
-      <h2>Social</h2>
-      <Links />
+      <h2>Connect with Nathan</h2>
+      <div className="connect-box">
+        <Connect />
+      </div>
     </section>
   )
 }
