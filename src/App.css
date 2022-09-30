@@ -559,7 +559,7 @@ footer a, footer a:visited {
 }
 
 /* Surface Duo vertical view */
-@media (min-width: 480px) and (max-width: 600px) and (min-height: 480px) and (max-height: 750px) {
+@media (min-width: 480px) and (max-width: 600px) and (min-height: 480px) and (max-height: 1100px) {
   .nav-ul {
     padding: 0.25em;
   }
