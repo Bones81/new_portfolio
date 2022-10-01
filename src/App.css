@@ -621,7 +621,7 @@ footer a, footer a:visited {
     font-size: 2.75em;
   }
 
-  h2 {
+  h2, #projects h2, #resume h2 {
     font-size: 2.5em;
   }
 
