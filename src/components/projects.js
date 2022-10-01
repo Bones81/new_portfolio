@@ -33,29 +33,33 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      {projects.map(proj => {
-        return !showProject ? (
-          <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
-            <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
-            <h2 className='project-title'>{proj.name}</h2>
+      {projects.length !== 0 ? projects.map(proj => {
+          return !showProject ? (
+            <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
+              <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
+              <h2 className='project-title'>{proj.name}</h2>
+            </div>
+          ) : showID === proj.id ? (
+            <div className="project-display" key={"display_" + proj.id}>
+              <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
+              <h1>{proj.name}</h1>
+              <p>{proj.blurb}</p>
+              <button className='live-link-btn'><a target="_blank" rel="noreferrer" href={proj.liveLink}>Live Link</a></button>
+              <button className='github-link-btn'><a target="_blank" rel="noreferrer" href={proj.githubLink}>The Code</a></button>
+              <hr/>
+              <button className="close-btn" onClick={resetDisplay}>Close</button>
+            </div>
+          ) : (
+            <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
+              <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
+              <h2 className='project-title'>{proj.name}</h2>
+            </div>
+          )
+        }) : 
+          <div className='loading-div'>
+            <h2 className='loading-text'>Loading projects...</h2>
           </div>
-        ) : showID === proj.id ? (
-          <div className="project-display" key={"display_" + proj.id}>
-            <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
-            <h1>{proj.name}</h1>
-            <p>{proj.blurb}</p>
-            <button><a target="_blank" rel="noreferrer" href={proj.liveLink}>Live Link</a></button>
-            <button><a target="_blank" rel="noreferrer" href={proj.githubLink}>The Code</a></button>
-            <hr/>
-            <button onClick={resetDisplay}>Back to All Projects</button>
-          </div>
-        ) : (
-          <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
-            <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
-            <h2 className='project-title'>{proj.name}</h2>
-          </div>
-        )
-      })}
+        }
     </section>
   )
 }

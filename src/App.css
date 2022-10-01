@@ -282,6 +282,26 @@ header {
   text-align: center;
 }
 
+.loading-div {
+  height: 15vh;
+  text-align: center;
+  width: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  animation: loading-animation 2.5s infinite linear;
+  border-radius: 10vh;
+}
+
+.loading-text {
+  font-size: 2em;
+  font-family: "Red Hat Display", sans-serif;
+  background: radial-gradient(goldenrod, rgb(235, 131, 83), gold);
+  border-radius: 1vh;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
 .project-title {
   background: navy;
   width: fit-content;
@@ -312,9 +332,42 @@ header {
   color: black;
   border: 10px solid blue;
   border-radius: 25px;
+  box-shadow: 2px 2px 10px blue;
   width: 80%;
   margin: 2em auto;
   text-align: center;
+}
+
+.project-display button {
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 2px black;
+  margin-top: 5px;
+}
+
+.project-display button, .project-display button a {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+}
+
+.live-link-btn a, .github-link-btn a {
+  color: white;
+}
+
+.live-link-btn {
+  background: linear-gradient(140deg, silver, green, silver);
+  border: 1px solid green;
+}
+
+.github-link-btn {
+  background: linear-gradient(140deg, silver, blue, silver);
+  border: 1px solid blue;
+}
+
+.close-btn {
+  background: linear-gradient(140deg, silver, white, silver);
 }
 
 /* RESUME SECTION */
@@ -634,5 +687,29 @@ footer a, footer a:visited {
 
   .link-li {
     padding: 0 0.5em;
+  }
+}
+
+@keyframes loading-animation {
+  0% {
+    transform: scale(0.75);
+    background-color: navy;
+  }
+
+  25% {
+    transform: scale(0.875);
+    background-color: blue;
+  }
+  50% {
+    transform: scale(1);
+    background-color: silver;
+  }
+  75% {
+    transform: scale(0.875);
+    background-color: blue;
+  }
+  100% {
+    transform: scale(0.75);
+    background-color: navy;
   }
 }
