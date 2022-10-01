@@ -39,7 +39,7 @@ const Resume = () => {
           <FaSlack />
           <SiNestjs />
           <SiGooglemaps />
-          <img src='./img/mongoose.png' />
+          <img src='./img/mongoose.png' alt="mongoose logo"/>
         </div>
 
         <details>

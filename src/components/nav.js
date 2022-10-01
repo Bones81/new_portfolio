@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { RiArrowGoBackFill } from "react-icons/ri"
 import { MdArrowCircleUp } from "react-icons/md"
 
 const Nav = () => {
