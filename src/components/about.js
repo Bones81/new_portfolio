@@ -1,8 +1,38 @@
+import { useEffect } from "react";
+let picIndex = 0;
+const imgList = [
+  "Nate_Down_Under.jpg",
+  "Nate_Singing_Lincoln.jpg",
+  "Nathan Waving HKDL 2016.jpg",
+  "Nathan_Road.jpg"
+];
+
 const About = () => {
+
+  useEffect(() => {
+    const imgEl = document.querySelector('.about-pic')
+
+    const changePic = () => {
+      imgEl.setAttribute("src", `img/${imgList[picIndex]}`)
+      if (imgList.length - 1 === picIndex) {
+        picIndex = 0
+      } else {
+        picIndex++
+      }
+    } 
+    const interval = setInterval(changePic, 2000);
+    return () => clearInterval(interval)
+  },[])
+
+
   return (
     <section id="about">
       <h2>About Nathan</h2>
-      <img src="img/Nate_Down_Under.jpg" alt="Nathan headshot" className="about-pic" />
+      <div className="carousel-container">
+        <div className="carousel">
+          <img src="img/Nate_Down_Under.jpg" alt="Nathan headshot" className="about-pic" />
+        </div>
+      </div>
       <article id="bio-text">
         <p>I come to code from a performing arts background. After graduating from Princeton University, I pursued an acting career, with a focus on musical theatre. After many years and a variety of intertwined circumstances, the time had come to build a second career.</p>
         <p>Enter Code. While I had dabbled in code many times, I fully embraced the idea of being a developer in January 2022 when I enrolled in a General Assembly Software Engineering Immersive. There I solidified a set of full stack skills and grew in confidence as a developer.</p>
