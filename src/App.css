@@ -506,7 +506,7 @@ button {
 footer {
   font-family: 'Red Hat Display', sans-serif;
   color: white;
-  background-color: navy;
+  background: linear-gradient(50deg, navy, silver, blue);
   padding: 0.5em;
 }
 
