@@ -17,6 +17,7 @@ const Nav = () => {
         <li className="nav-li common-link"><a href="#projects">Projects</a></li>
         <li className="nav-li common-link"><a href="#resume">Resume</a></li>
         <li className="nav-li common-link"><a href="#connect">Connect</a></li>
+        <li className="nav-li common-link"><a href="https://bones81.github.io/actor_site/" target="_blank" rel="noreferrer">Nate Acts</a></li>
       </ul>
       <ul className="sm mini-nav-ul-closed">
         <a href="#hero" className="nav-li home-link"><li >&lt;Nate Codes&gt;</li></a>
@@ -35,6 +36,8 @@ const Nav = () => {
             <li className="nav-li common-link"><a href="#projects" onClick={toggleMenu}>Projects</a></li>
             <li className="nav-li common-link"><a href="#resume" onClick={toggleMenu}>Resume</a></li>
             <li className="nav-li common-link"><a href="#connect" onClick={toggleMenu}>Connect</a></li>
+            <li className="nav-li common-link"><a href="https://bones81.github.io/actor_site/" target="_blank" rel="noreferrer">Nate Acts</a></li>
+
           </ul>
         </div> 
       : null}

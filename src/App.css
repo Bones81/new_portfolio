@@ -582,13 +582,13 @@ footer a, footer a:visited {
   }
  
   .nav-li {
-    font-size: 1.2em;
-    padding: 0.5em;
+    font-size: 0.9em;
+    padding: 0;
   }
 
   .home-link {
-    font-size: 1.2em;
-    padding: 1em;
+    font-size: 1em;
+    padding: 0.5em;
   }
 
   header {
@@ -676,8 +676,8 @@ footer a, footer a:visited {
   }
  
   .nav-li {
-    font-size: 1.5em;
-    padding: 1em;
+    font-size: 1.25em;
+    padding: 0.5em;
   }
   
   .home-link {
