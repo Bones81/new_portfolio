@@ -44,7 +44,7 @@ const Projects = () => {
               <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
               <h1>{proj.name}</h1>
               <p>{proj.blurb}</p>
-              <button className='live-link-btn'><a target="_blank" rel="noreferrer" href={proj.liveLink}>Live Link</a></button>
+              <button className='live-link-btn'><a target="_blank" rel="noreferrer" href={proj.liveLink}>The Site</a></button>
               <button className='github-link-btn'><a target="_blank" rel="noreferrer" href={proj.githubLink}>The Code</a></button>
               <hr/>
               <button className="close-btn" onClick={resetDisplay}>Close</button>
