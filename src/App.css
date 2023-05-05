@@ -362,7 +362,7 @@ header {
 }
 
 .project-card img {
-  filter: blur(2px)
+  filter: blur(5px)
 }
 
 .project-card:hover img + .project-title {
