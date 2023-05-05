@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { MdArrowCircleUp } from "react-icons/md"
+import { MdClear } from "react-icons/md"
 
 const Nav = () => {
   const [openMenu, setOpenMenu] = useState(false)
@@ -28,7 +28,7 @@ const Nav = () => {
       {openMenu ? 
         <div className="open-menu">
           <div className="hamburger-menu">
-            <MdArrowCircleUp onClick={toggleMenu}/>
+            <MdClear onClick={toggleMenu}/>
           </div>
           <ul className="mini-nav-ul-open">
             <a href="#hero" className="nav-li home-link" onClick={toggleMenu}><li >&lt;Nate Codes&gt;</li></a>

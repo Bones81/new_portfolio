@@ -7,7 +7,7 @@ const Projects = () => {
   const [showID, setShowID] = useState(null)
 
   const api_url = 'https://new-portfolio-back-2.onrender.com'
-  // const api_url= 'http://localhost:8000'
+  // const api_url = 'http://localhost:8000'
 
   const getProjects = () => {
     axios.get(`${api_url}/api/projects`)
@@ -43,12 +43,14 @@ const Projects = () => {
             ) : showID === proj.id ? (
               <div className="project-display" key={"display_" + proj.id}>
                 <img src={proj.img} alt={`a screen capture of ${proj.name}`}/>
-                <h1>{proj.name}</h1>
-                <p>{proj.blurb}</p>
-                <button className='live-link-btn'><a target="_blank" rel="noreferrer" href={proj.liveLink}>The Site</a></button>
-                <button className='github-link-btn'><a target="_blank" rel="noreferrer" href={proj.githubLink}>The Code</a></button>
-                <hr/>
-                <button className="close-btn" onClick={resetDisplay}>Close</button>
+                <div className="project-info">
+                  <h1>{proj.name}</h1>
+                  <p>{proj.blurb}</p>
+                  <button className='live-link-btn'><a target="_blank" rel="noreferrer" href={proj.liveLink}>The Site</a></button>
+                  <button className='github-link-btn'><a target="_blank" rel="noreferrer" href={proj.githubLink}>The Code</a></button>
+                  <hr/>
+                  <button className="close-btn" onClick={resetDisplay}>Close</button>
+                </div>
               </div>
             ) : (
               <div className="project-card" key={proj.id} onClick={() => displayProject(proj.id)}>
@@ -58,7 +60,8 @@ const Projects = () => {
             )
           }) :
             <div className='loading-div'>
-              <h2 className='loading-text'>Loading projects...</h2>
+              <h2 className='loading-text'>Loading projects... <br/><span className='loading-caption'>(May take up to 30s)</span></h2>
+              
             </div>
         }
       </div>
