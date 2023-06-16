@@ -2,7 +2,37 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 const Projects = () => {
-  const [projects, setProjects] = useState([])
+  const mainProjects = [
+    {
+      name: 'Test1',
+      img: 'img/text',
+      liveLink: 'liveLink/txt1',
+      githubLink: 'githubLink/txt1',
+      blurb: 'Lorem Ipsum Omnia Gallia Vincit'
+    },
+    {
+      name: 'Test2',
+      img: 'img/text',
+      liveLink: 'liveLink/txt2',
+      githubLink: 'githubLink/txt2',
+      blurb: 'Lorem Ipsum Omnia Gallia Vincit'
+    },
+    {
+      name: 'Test3',
+      img: 'img/text',
+      liveLink: 'liveLink/txt3',
+      githubLink: 'githubLink/txt3',
+      blurb: 'Lorem Ipsum Omnia Gallia Vincit'
+    },
+    {
+      name: 'Test4',
+      img: 'img/text',
+      liveLink: 'liveLink/txt4',
+      githubLink: 'githubLink/txt4',
+      blurb: 'Lorem Ipsum Omnia Gallia Vincit'
+    },
+  ]
+  const [projects, setProjects] = useState([...mainProjects])
   const [showProject, setShowProject] = useState(false)
   const [showID, setShowID] = useState(null)
 
@@ -12,7 +42,7 @@ const Projects = () => {
   const getProjects = () => {
     axios.get(`${api_url}/api/projects`)
     .then( (response) => {
-      setProjects(response.data)
+      setProjects([...mainProjects, ...response.data])
     })
   }
 
