@@ -48,8 +48,8 @@ const Projects = () => {
   const [showProject, setShowProject] = useState(false)
   const [showID, setShowID] = useState(null)
 
-  // const api_url = 'https://new-portfolio-back-2.onrender.com'
-  const api_url = 'http://localhost:8000'
+  const api_url = 'https://new-portfolio-back-2.onrender.com'
+  // const api_url = 'http://localhost:8000'
 
   const getProjects = () => {
     axios.get(`${api_url}/api/projects`)
