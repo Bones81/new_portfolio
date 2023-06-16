@@ -21,11 +21,11 @@ const Projects = () => {
     },
     {
       id: 2, 
-      name: 'SAG Background Pay Tracker and Calculator',
+      name: 'SAG Background Pay Calculator',
       img: 'img/SAGVouchers.png',
       liveLink: 'https://bones81.github.io/SAGVouchers-Front-End/vouchers',
       githubLink: 'https://github.com/Bones81/SAGVouchers-Front-End',
-      blurb: 'This app enables users to calculate and track how much a SAG background performer earns for a day of work under the NYC primetime TV/film pay schedule. Tech Stack: Angular | Node | Express | MongoDB'
+      blurb: 'Calculates and records how much an extra earns under a SAG pay schedule. Tech Stack: Angular | Node | Express | MongoDB'
     },
     {
       id: 3, 
@@ -41,7 +41,7 @@ const Projects = () => {
       img: 'img/Futurama.png',
       liveLink: 'https://bones81.github.io/Futurama-FE/',
       githubLink: 'https://github.com/Bones81/Futurama-FE',
-      blurb: 'Built with love for the classic sci-fi tv show, this app features a database of characters and episodes from the show, as well as an embedded Google Map that records the location of every Futurama Fan who visits the site. This app was developed in collaboration with Joey Kozak. Tech Stack: React | Node | Express | MongoDB | Google Maps API'
+      blurb: 'A database of characters and episodes from Futurama, with a Google Map of fan locations. Tech Stack: MERN | Google Maps API | 3rd Party API'
     }
   ]
   const [projects, setProjects] = useState([])
