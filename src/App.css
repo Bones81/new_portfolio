@@ -282,7 +282,8 @@ header {
 #bio-text {
   width: 90%;
   background: rgba(255,255,255,0.8);
-  padding: 1em;
+  padding: 3em 2em;
+  margin: 3em 0;
   border-radius: 20px;
 }
 
@@ -297,6 +298,10 @@ header {
 /* PROJECTS SECTION */
 #projects {
   font-family: 'Josefin Sans', cursive;
+}
+
+#about .section-title, #projects .section-title, #contact .section-title, #resume .section-title {
+  font-size: 2em;
 }
 
 .projects-container {
@@ -351,6 +356,7 @@ header {
   border-radius: 25px;
   transition: all .1s ease;
   transform: scale(1);
+  font-size: 1em;
 }
 
 /* .project-title:hover {
@@ -487,11 +493,11 @@ header {
 }
 
 #resume h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 #resume h3 {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .tech-skills {
@@ -503,7 +509,14 @@ header {
   border: 2px solid black;
   box-shadow: 2px 2px 10px navy;
   margin: 1em;
-  padding: 0.5em;
+  padding: 3em;
+}
+
+.tech-skill-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-skills > svg {
@@ -520,7 +533,7 @@ details {
   font-size: 1.5em;
   font-weight: 700;
   margin: 1em auto;
-  padding: 1em;
+  padding: 2em;
   width: 70vw;
   border: 2px solid black;
   box-shadow: 2px 2px 10px navy;
@@ -798,6 +811,13 @@ footer a, footer a:visited {
   .home-link {
     font-size: 1.5em;
     padding: 1em;
+  }
+
+  #about .section-title,
+  #projects .section-title,
+  #contact .section-title,
+  #resume .section-title {
+    font-size: 2.5em;
   }
 
   .carousel-container {
