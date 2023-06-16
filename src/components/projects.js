@@ -33,7 +33,7 @@ const Projects = () => {
       img: 'img/HKDLCarolerInfo.jpg',
       liveLink: 'https://bones81.github.io/hkdl_2022/',
       githubLink: 'https://github.com/Bones81/hkdl_2022',
-      blurb: 'Built in 2022 to prepare new and returning performers for the life-changing experience of working for Hong Kong Disneyland as a Christmas season vocalist. Built with: React'
+      blurb: 'Built in 2022 as a guide for Hong Kong Disneyland Christmas season singers. Built with: React'
     },
     {
       id: 4, 
@@ -74,7 +74,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 className='section-title'>Projects</h2>
       <div className="projects-container">
         { mainProjects.map( proj => {
           return showProject ? (

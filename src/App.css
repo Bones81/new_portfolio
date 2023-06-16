@@ -282,7 +282,8 @@ header {
 #bio-text {
   width: 90%;
   background: rgba(255,255,255,0.8);
-  padding: 1em;
+  padding: 3em 2em;
+  margin: 3em 0;
   border-radius: 20px;
 }
 
@@ -297,6 +298,10 @@ header {
 /* PROJECTS SECTION */
 #projects {
   font-family: 'Josefin Sans', cursive;
+}
+
+#about .section-title, #projects .section-title, #contact .section-title, #resume .section-title {
+  font-size: 2em;
 }
 
 .projects-container {
@@ -351,6 +356,7 @@ header {
   border-radius: 25px;
   transition: all .1s ease;
   transform: scale(1);
+  font-size: 1em;
 }
 
 /* .project-title:hover {
@@ -805,6 +811,13 @@ footer a, footer a:visited {
   .home-link {
     font-size: 1.5em;
     padding: 1em;
+  }
+
+  #about .section-title,
+  #projects .section-title,
+  #contact .section-title,
+  #resume .section-title {
+    font-size: 2.5em;
   }
 
   .carousel-container {

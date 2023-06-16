@@ -20,7 +20,7 @@ import { SiBootstrap } from "react-icons/si"
 const Resume = () => {
   return (
     <section id="resume">
-      <h2>Resume Highlights</h2>
+      <h2 className="section-title">Resume Highlights</h2>
       <div>
         <h3>Technical Skills</h3>
         <div className="tech-skills">
